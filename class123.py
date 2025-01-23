@@ -1,0 +1,7 @@
+name = input("What is your name? ")
+print (f"Hi there, {name}. ")
+print (f"{name} is a nice name. ")
+print (f"Hi {name}! ")
+email = input ("What is your email? ")
+age = int(input("Please enter your age: "))
+info = input (f"Your given name, email, and age are {name}, {email}, {age}. Thank you for entering your information. ")
