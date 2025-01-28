@@ -7,12 +7,10 @@ def checkdays():
         print ("Wednesday is not in the list of days. ")  
 checkdays() 
 
- 
 def sorting():
     numbers = (2, 1, 3) #tuple of numbers
     numberlist = list(numbers) #convert to a list
     numberlist.sort() #sort the converted list
     numbers = tuple (numberlist) #convert back to a tuple
     print (numbers) 
-    
 sorting()
