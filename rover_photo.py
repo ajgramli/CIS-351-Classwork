@@ -13,9 +13,10 @@ response = requests.get(url, params=params)
 data = response.json() 
 
 if data ['photos']:
-    photo_url = data['photos'][0]['img_src']
-    response = requests.get(photo_url)
-    img = Image.open(BytesIO(response.content))
-    img.show()
+    for photo in data['photos'][:2]: #gets 2 photos
+        photo_url = data['photos'][0]['img_src']
+        response = requests.get(photo_url)
+        img = Image.open(BytesIO(response.content))
+        img.show()
 else:
     print ('No photos found.') 
